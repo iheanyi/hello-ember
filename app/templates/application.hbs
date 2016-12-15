@@ -1,5 +1,13 @@
-{{#unless showName}}
+{{#if showName}}
   <h2 id="title">Hello {{name}}</h2>
 {{else}}
   <h2 id="title">Hello Ember!</h2>
-{{/unless}}
+{{/if}}
+
+<button {{action 'toggleName'}}>Toggle Name</button>
+
+<br>
+
+{{numClicks}} Clicks
+{{input value=amount}}
+<button {{action 'incrementClicks'}}>Increment +{{amount}}</button>
