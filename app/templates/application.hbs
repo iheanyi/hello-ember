@@ -1,1 +1,7 @@
-<h1>Welcome to the Ember App!</h1>
+<h1>Application</h1>
+{{link-to 'Home' 'index'}}
+{{link-to 'About' 'about'}}
+{{#link-to 'about'}}
+History
+{{/link-to}}
+{{outlet}}
