@@ -10,7 +10,6 @@ Router.map(function() {
   this.route('parent', function() {
   });
 
-
   this.route('parent.child', {path: 'parent/child'});
 });
 
