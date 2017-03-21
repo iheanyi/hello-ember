@@ -6,11 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('about');
-  this.route('parent', function() {
+  this.route('todos', function() {
+    this.route('show', {path: '/:id'});
   });
-
-  this.route('parent.child', {path: 'parent/child'});
 });
 
 export default Router;
